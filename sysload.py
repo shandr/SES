@@ -610,11 +610,11 @@ check_free_space_thread=threading.Thread(target=check_free_space)
 
 check_software()
 
-print "Please wait ~ %s seconds while gathering statistics" % get_stat_time
-
 if len(sys.argv) < 2:
     print "run sysload.py --h for help"
     sys.exit(0)
+
+print "Please wait ~ %s seconds while gathering statistics" % get_stat_time
 
 if args.all:
     args.cpu = True
